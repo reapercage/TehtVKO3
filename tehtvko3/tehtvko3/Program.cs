@@ -10,7 +10,8 @@ namespace tehtvko3
     {
         static void Main(string[] args)
         {
-            KiukaanLämmitys();
+            //KiukaanLämmitys();
+            PesukoneKäyttö();
         }
         static void KiukaanLämmitys()
         {
@@ -40,6 +41,23 @@ namespace tehtvko3
                                 + sampo.Kosteus + " prosenttia.");
             Console.ReadKey();
 
+
+        }
+        static void PesukoneKäyttö()
+        {
+            Pesukone pertti = new tehtvko3.Pesukone();
+            pertti.Päällä = false;
+            Console.WriteLine("**** Pesukoneen käyttö ****");
+            Console.WriteLine("---------------------------");
+            Console.WriteLine();
+            Console.WriteLine("Valitse pesuohjelma 1-5 > ");
+            pertti.Ohjelma = System.Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lämpötila > ");
+            pertti.Lämpötila = System.Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Käytetäänkö linkousta > ");
+            Console.WriteLine("Linkouksen nopeus > ");
+            Console.WriteLine("Pesun kesto > ");
+            Console.WriteLine("Käynnistä pesukone (K/E) > ");
 
         }
     }

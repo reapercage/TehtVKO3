@@ -10,9 +10,10 @@ namespace tehtvko3
     {
         public bool Päällä { get; set; }
         public int Kesto { get; set; }
-        public int Lämpö { get; set; }
         public bool Linkous { get; set; }
         int kierrokset;
+        int pesuohjelma;
+        int lämpö;
 
         //pesuohjelma
         public int LinkousKierrokset
@@ -24,6 +25,32 @@ namespace tehtvko3
                 if (kierrokset < 0 || kierrokset > 2000)
                 {
                     kierrokset = 0;
+                }
+            }
+
+        }
+        public int Ohjelma
+        {
+            get { return pesuohjelma; }
+            set
+            {
+                pesuohjelma = value;
+                if (pesuohjelma < 0 || pesuohjelma > 5)
+                {
+                    pesuohjelma = 1;
+                }
+            }
+
+        }
+        public int Lämpötila
+        {
+            get { return lämpö; }
+            set
+            {
+                lämpö = value;
+                if (lämpö < 0 || lämpö > 60)
+                {
+                    lämpö = 0;
                 }
             }
 

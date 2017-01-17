@@ -54,10 +54,15 @@ namespace tehtvko3
             pertti.Ohjelma = System.Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Lämpötila > ");
             pertti.Lämpötila = System.Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Käytetäänkö linkousta > ");
+            Console.WriteLine("Käytetäänkö linkousta (K/E) > ");
+            pertti.Lingotaanko = Console.ReadLine();
             Console.WriteLine("Linkouksen nopeus > ");
+            pertti.LinkousKierrokset = System.Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Pesun kesto > ");
+            pertti.Pesunkesto = System.Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Käynnistä pesukone (K/E) > ");
+            pertti.Käynnistä = Console.ReadLine();
+            Console.ReadKey();
 
         }
     }

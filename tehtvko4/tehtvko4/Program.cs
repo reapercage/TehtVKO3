@@ -13,7 +13,9 @@ namespace tehtvko4
             //Tehtävä 1
             //HissinKäyttö();
             //Tehtävä 2
-            VahvistimenVoimakkuus();
+            //VahvistimenVoimakkuus();
+            //Tehtävä 3
+            Työntekijät();
         }
 
         static void HissinKäyttö()
@@ -57,6 +59,10 @@ namespace tehtvko4
 
             }
             Console.ReadKey();
+        }
+        static void Työntekijät()
+        {
+
         }
     }
 }

@@ -109,6 +109,10 @@ namespace tehtvko3
             Opiskelija[] oppilas = new Opiskelija[5];
             //students[0] = new Student { Fristname = "pökö", };
             //oppilas[0] = new Opiskelija { "Pasi", "7A", "Harju 1A", "456875" };
+            for(int i = 0; i < 5; i++)
+            {
+                oppilas[i] = new Opiskelija();
+            }
             oppilas[0].Nimi = "Pasi";
             oppilas[1].Nimi = "Jyri";
             oppilas[2].Nimi = "Tytti";

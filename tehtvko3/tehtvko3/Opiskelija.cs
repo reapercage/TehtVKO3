@@ -38,6 +38,11 @@ namespace tehtvko3
             Osoite = osoite;
             Puh = puh;
         }
+        //konstruktori
+        public Opiskelija()
+        {
+
+        }
 
         public void NäytäTiedot()
         {

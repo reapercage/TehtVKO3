@@ -10,7 +10,10 @@ namespace tehtvko4
     {
         static void Main(string[] args)
         {
-            HissinKäyttö();
+            //Tehtävä 1
+            //HissinKäyttö();
+            //Tehtävä 2
+            VahvistimenVoimakkuus();
         }
 
         static void HissinKäyttö()
@@ -38,6 +41,21 @@ namespace tehtvko4
 
             }
             Console.WriteLine("Hissi on nyt kerroksessa " + elevator.Kerrokseen + ".");
+            Console.ReadKey();
+        }
+        static void VahvistimenVoimakkuus()
+        {
+            Vahvistin vahvari = new Vahvistin();
+            vahvari.Volume = 0;
+            Console.WriteLine("-- Amplifier --");
+            Console.WriteLine("Volume: " + vahvari.Volume);
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Adjust volume (0-100) > ");
+                vahvari.Volume = System.Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Volume: " + vahvari.Volume);
+
+            }
             Console.ReadKey();
         }
     }

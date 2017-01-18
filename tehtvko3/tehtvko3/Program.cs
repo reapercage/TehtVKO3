@@ -13,11 +13,11 @@ namespace tehtvko3
             //Tehtävä 1
             //KiukaanLämmitys();
             //Tehtävä 2
-            PesukoneKäyttö();
+            //PesukoneKäyttö();
             //Tehtävä 4
             //VehicleOne();
             //Tehtävä 5
-            //Opiskelijat();
+            Opiskelijat();
         }
         static void KiukaanLämmitys()
         {
@@ -101,36 +101,39 @@ namespace tehtvko3
         }
         static void Opiskelijat()
         {
-            Opiskelija Oppilas1 = new Opiskelija("Pasi", "7A", "Harju 1A", "456875");
-            Opiskelija Oppilas2 = new Opiskelija("Jyri", "7A", "Harju 1A", "456875");
-            Opiskelija Oppilas3 = new Opiskelija("Tytti", "7A", "Harju 1A", "456875");
-            Opiskelija Oppilas4 = new Opiskelija("Suvi", "7A", "Harju 1A", "456875");
-            Opiskelija Oppilas5 = new Opiskelija("Anssi", "7A", "Harju 1A", "456875");
-            //Opiskelija[] Oppilas = new Opiskelija[1];
-            /*Oppilas[1].Nimi = "Jyri";
-            Oppilas[2].Nimi = "Tytti";
-            Oppilas[3].Nimi = "Suvi";
-            Oppilas[4].Nimi = "Anssi";
-            Oppilas[0].Ryhmä = "7A";
-            Oppilas[1].Ryhmä = "7A";
-            Oppilas[2].Ryhmä = "7A";
-            Oppilas[3].Ryhmä = "8B";
-            Oppilas[4].Ryhmä = "8B";
-            Oppilas[0].Osoite = "Harju 1A";
-            Oppilas[1].Osoite = "Harju 2B";
-            Oppilas[2].Osoite = "Viitaniemi 4C";
-            Oppilas[3].Osoite = "Harju 2C";
-            Oppilas[4].Osoite = "Voionmaa 4A";
-            Oppilas[0].Puh = "456875";
-            Oppilas[1].Puh = "789456";
-            Oppilas[2].Puh = "123456";
-            Oppilas[3].Puh = "645987";
-            Oppilas[4].Puh = "321654";*/
-            /*for(int i = 0; i < 5; i++)
+            /*Opiskelija oppilas1 = new Opiskelija("Pasi", "7A", "Harju 1A", "456875");
+            Opiskelija oppilas2 = new Opiskelija("Jyri", "7A", "Harju 1A", "456875");
+            Opiskelija oppilas3 = new Opiskelija("Tytti", "7A", "Harju 1A", "456875");
+            Opiskelija oppilas4 = new Opiskelija("Suvi", "7A", "Harju 1A", "456875");
+            Opiskelija oppilas5 = new Opiskelija("Anssi", "7A", "Harju 1A", "456875");*/
+            Opiskelija[] oppilas = new Opiskelija[5];
+            //students[0] = new Student { Fristname = "pökö", };
+            //oppilas[0] = new Opiskelija { "Pasi", "7A", "Harju 1A", "456875" };
+            oppilas[0].Nimi = "Pasi";
+            oppilas[1].Nimi = "Jyri";
+            oppilas[2].Nimi = "Tytti";
+            oppilas[3].Nimi = "Suvi";
+            oppilas[4].Nimi = "Anssi";
+            oppilas[0].Ryhmä = "7A";
+            oppilas[1].Ryhmä = "7A";
+            oppilas[2].Ryhmä = "7A";
+            oppilas[3].Ryhmä = "8B";
+            oppilas[4].Ryhmä = "8B";
+            oppilas[0].Osoite = "Harju 1A";
+            oppilas[1].Osoite = "Harju 2B";
+            oppilas[2].Osoite = "Viitaniemi 4C";
+            oppilas[3].Osoite = "Harju 2C";
+            oppilas[4].Osoite = "Voionmaa 4A";
+            oppilas[0].Puh = "456875";
+            oppilas[1].Puh = "789456";
+            oppilas[2].Puh = "123456";
+            oppilas[3].Puh = "645987";
+            oppilas[4].Puh = "321654";
+            for(int i = 0; i < 5; i++)
             {
-                Oppilas[i].NäytäTiedot();
+                oppilas[i].NäytäTiedot();
             }
-            Console.ReadKey();*/
+            Console.ReadKey();
 
         }
     }

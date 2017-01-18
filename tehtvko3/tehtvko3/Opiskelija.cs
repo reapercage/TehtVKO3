@@ -12,6 +12,11 @@ namespace tehtvko3
         public String Ryhmä { get; set; }
         public String Osoite { get; set; }
         public String Puh { get; set; }
+        /*
+         * Tunnus
+         * ikä
+         * email
+         * */
 
         /*private string[] nimet = new string[5];
 
@@ -36,6 +41,7 @@ namespace tehtvko3
 
         public void NäytäTiedot()
         {
+            //Parempi ratkaisu palauttaa String
             Console.WriteLine(Nimi + " " +  Ryhmä + " " + Osoite + " " + Puh);
         }
     }

@@ -1,0 +1,10 @@
+class Opiskelija
+
+tiedot
+Enimi
+Snimi
+Ryhmä
+Osoite
+Puh
+
+Tulosta tiedot

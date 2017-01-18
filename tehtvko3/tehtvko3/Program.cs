@@ -81,8 +81,12 @@ namespace tehtvko3
         }
         static void Opiskelijat()
         {
-            Opiskelija[] Oppilas = new tehtvko3.Opiskelija[5];
-            Oppilas[0].Nimi = "Pasi";
+            Opiskelija Oppilas1 = new Opiskelija("Pasi", "7A", "Harju 1A", "456875");
+            Opiskelija Oppilas2 = new Opiskelija("Jyri", "7A", "Harju 1A", "456875");
+            Opiskelija Oppilas3 = new Opiskelija("Tytti", "7A", "Harju 1A", "456875");
+            Opiskelija Oppilas4 = new Opiskelija("Suvi", "7A", "Harju 1A", "456875");
+            Opiskelija Oppilas5 = new Opiskelija("Anssi", "7A", "Harju 1A", "456875");
+            /*Oppilas[0].Nimi = "Pasi";
             Oppilas[1].Nimi = "Jyri";
             Oppilas[2].Nimi = "Tytti";
             Oppilas[3].Nimi = "Suvi";
@@ -101,12 +105,12 @@ namespace tehtvko3
             Oppilas[1].Puh = "789456";
             Oppilas[2].Puh = "123456";
             Oppilas[3].Puh = "645987";
-            Oppilas[4].Puh = "321654";
-            for(int i = 0; i < 5; i++)
+            Oppilas[4].Puh = "321654";*/
+            /*for(int i = 0; i < 5; i++)
             {
                 Oppilas[i].NäytäTiedot();
             }
-            Console.ReadKey();
+            Console.ReadKey();*/
 
         }
     }

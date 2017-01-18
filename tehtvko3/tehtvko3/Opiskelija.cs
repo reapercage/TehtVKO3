@@ -13,18 +13,25 @@ namespace tehtvko3
         public String Osoite { get; set; }
         public String Puh { get; set; }
 
-        private string[] strings = new string[100];
+        /*private string[] nimet = new string[5];
 
         public string this[int i]
         {
             get
             {
-                return strings[i];
+                return nimet[i];
             }
             set
             {
-                strings[i] = value;
+                nimet[i] = value;
             }
+        }*/
+        public Opiskelija(string nimi, string ryhmä, string osoite, string puh)
+        {
+            Nimi = nimi;
+            Ryhmä = ryhmä;
+            Osoite = osoite;
+            Puh = puh;
         }
 
         public void NäytäTiedot()

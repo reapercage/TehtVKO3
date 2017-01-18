@@ -8,6 +8,7 @@ namespace tehtvko4
 {
     class Hissi
     {
+        public bool Vaara { get; set; }
         //int kerros;
         int kerrokseen;
         /*public int Kerros
@@ -33,7 +34,12 @@ namespace tehtvko4
                 if (kerrokseen < 1 || kerrokseen > 5)
                 {
                     kerrokseen = 1;
+                    //Vaara = true;
                 }
+                /*else
+                {
+                    Vaara = false;
+                }*/
             }
         }
     }

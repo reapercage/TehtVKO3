@@ -15,17 +15,28 @@ namespace tehtvko4
 
         static void HissinKäyttö()
         {
-            int h1 = 1;
             Hissi elevator = new Hissi();
+            elevator.Vaara = true;
             elevator.Kerrokseen = 1;
-            Console.WriteLine("Hissi on nyt kerroksessa " + elevator.Kerrokseen + ".");
-            Console.Write("Kutsu hissiä kerroksesta > ");
-            h1 = System.Convert.ToInt32(Console.ReadLine());
-            if(h1 => 1 && h1 =< 5)
+            int h1 = 1;
+            //if x or X poistu hissistä (door open) else
+            while (elevator.Vaara == true)
             {
+                Console.WriteLine("Hissi on nyt kerroksessa " + elevator.Kerrokseen + ".");
+                Console.Write("Kutsu hissiä kerrokseen > ");
+                h1 = System.Convert.ToInt32(Console.ReadLine());
+                if(h1 >= 1 && h1 <= 5)
+                {
+                    elevator.Kerrokseen = h1;
+                    elevator.Vaara = false;
+                }
+                else
+                {
+                    Console.WriteLine("Kerrosta ei ole olemassa.");
+                    elevator.Vaara = true;
+                }
 
             }
-            elevator.Kerrokseen = System.Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hissi on nyt kerroksessa " + elevator.Kerrokseen + ".");
             Console.ReadKey();
         }

@@ -13,11 +13,11 @@ namespace tehtvko3
             //Tehtävä 1
             //KiukaanLämmitys();
             //Tehtävä 2
-            //PesukoneKäyttö();
+            PesukoneKäyttö();
             //Tehtävä 4
             //VehicleOne();
             //Tehtävä 5
-            Opiskelijat();
+            //Opiskelijat();
         }
         static void KiukaanLämmitys()
         {
@@ -68,6 +68,26 @@ namespace tehtvko3
             pertti.Pesunkesto = System.Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Käynnistä pesukone (K/E) > ");
             pertti.Käynnistä = Console.ReadLine();
+            Console.WriteLine();
+            if (pertti.Päällä == true)
+            {
+                Console.WriteLine("Pesukone on nyt päällä.");
+            }
+            else
+            {
+                Console.WriteLine("Pesukone ei ole päällä.");
+            }
+            Console.WriteLine("Pesuohjelmaksi on valittu ohjelma " + pertti.Ohjelma + ".");
+            Console.WriteLine("Lämpötila on säädetty " + pertti.Lämpötila + " celsius asteeseen.");
+            if(pertti.Linkous == true)
+            {
+                Console.WriteLine("Linkous on käytössä. Linkouksen voimakkuus on " + pertti.LinkousKierrokset + "rpm.");
+            }
+            else
+            {
+                Console.WriteLine("Linkous ei ole käytössä.");
+            }
+            Console.WriteLine("Pesun kesto on " + pertti.Pesunkesto + " min.");
             Console.ReadKey();
 
         }
@@ -86,8 +106,8 @@ namespace tehtvko3
             Opiskelija Oppilas3 = new Opiskelija("Tytti", "7A", "Harju 1A", "456875");
             Opiskelija Oppilas4 = new Opiskelija("Suvi", "7A", "Harju 1A", "456875");
             Opiskelija Oppilas5 = new Opiskelija("Anssi", "7A", "Harju 1A", "456875");
-            /*Oppilas[0].Nimi = "Pasi";
-            Oppilas[1].Nimi = "Jyri";
+            //Opiskelija[] Oppilas = new Opiskelija[1];
+            /*Oppilas[1].Nimi = "Jyri";
             Oppilas[2].Nimi = "Tytti";
             Oppilas[3].Nimi = "Suvi";
             Oppilas[4].Nimi = "Anssi";

@@ -17,7 +17,8 @@ namespace tehtvko4
             //Tehtävä 3 kesken
             //Työntekijät();
             //Tehtävä 5
-            Radiohead();
+            //Radiohead();
+            KirjahyllyJärjestykseen();
         }
 
         static void HissinKäyttö()
@@ -117,6 +118,10 @@ namespace tehtvko4
             }
             //
             Console.ReadKey();
+        }
+        static void KirjahyllyJärjestykseen()
+        {
+
         }
     }
 }

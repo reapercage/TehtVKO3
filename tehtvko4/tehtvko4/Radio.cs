@@ -40,11 +40,11 @@ namespace tehtvko4
                 frequency = value;
                 if(frequency < 2000)
                 {
-                    frequency = 0;
+                    frequency = 2000.0;
                 }
                 if (frequency > 26000)
                 {
-                    frequency = 0;
+                    frequency = 26000.0;
                 }
             }
         }

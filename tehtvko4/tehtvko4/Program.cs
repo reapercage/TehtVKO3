@@ -14,8 +14,10 @@ namespace tehtvko4
             //HissinKäyttö();
             //Tehtävä 2
             //VahvistimenVoimakkuus();
-            //Tehtävä 3
-            Työntekijät();
+            //Tehtävä 3 kesken
+            //Työntekijät();
+            //Tehtävä 5
+            Radiohead();
         }
 
         static void HissinKäyttö()
@@ -63,6 +65,58 @@ namespace tehtvko4
         static void Työntekijät()
         {
 
+        }
+        static void Radiohead()
+        {
+            Radio pioneer = new Radio();
+            pioneer.Päällä = false;
+            pioneer.Frequency = 2000.0;
+            String onoff;
+            String syöte;
+            Console.WriteLine("-- Radio --");
+            while(pioneer.Päällä == false)
+            {
+                Console.Write("Turn radio on (ON/OFF) > ");
+                onoff = Console.ReadLine();
+                if (onoff == "ON" || onoff == "on")
+                {
+                    Console.WriteLine("Radio is on.");
+                    Console.WriteLine("You can turn off the radio anytime by pressing OFF.");
+                    pioneer.Päällä = true;
+                }
+            }
+            while(pioneer.Päällä == true)
+            {
+                Console.Write("Adjust volume (0-9) > ");
+                syöte = Console.ReadLine();
+                if (syöte == "off" || syöte == "OFF")
+                {
+                    Console.WriteLine("Radio is turned off.");
+                    pioneer.Päällä = false;
+                    break;
+                }
+                else
+                {
+                    pioneer.Volume = System.Convert.ToInt32(syöte);
+                    Console.WriteLine("Volume : " + pioneer.Volume);
+                }
+                Console.Write("Change frequency (2000.0 - 26000.0) > ");
+                syöte = Console.ReadLine();
+                if (syöte == "off" || syöte == "OFF")
+                {
+                    Console.WriteLine("Radio is turned off.");
+                    pioneer.Päällä = false;
+                    break;
+                }
+                else
+                {
+                    //if syöte sisältää piste convert to pilkku
+                    pioneer.Frequency = System.Convert.ToDouble(syöte);
+                    Console.WriteLine("Frequency : " + pioneer.Frequency);
+                }
+            }
+            //
+            Console.ReadKey();
         }
     }
 }

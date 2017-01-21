@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="Hissi.cs" />
     <Compile Include="Kirjahylly.cs" />
+    <Compile Include="Media.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radio.cs" />
+    <Compile Include="Tavara.cs" />
     <Compile Include="Työntekijä.cs" />
     <Compile Include="Vahvistin.cs" />
   </ItemGroup>

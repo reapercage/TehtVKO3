@@ -18,6 +18,7 @@ namespace tehtvko4
             //Työntekijät();
             //Tehtävä 5
             //Radiohead();
+            //Tehtävä 6
             KirjahyllyJärjestykseen();
         }
 
@@ -121,6 +122,16 @@ namespace tehtvko4
         }
         static void KirjahyllyJärjestykseen()
         {
+            Media media = new Media();
+            media.Nimi = "Blizzard of Ozzy";
+            media.Tyyppi = "media";
+            media.Muoto = "cd";
+            media.Sisältö = "musiikki";
+            Console.WriteLine(media.ToString());
+
+            Media media2 = new Media("XXX", "media", "dvd", "elokuva");
+            Console.WriteLine(media2.ToString());
+            Console.ReadKey();
 
         }
     }

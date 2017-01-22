@@ -131,6 +131,17 @@ namespace tehtvko4
 
             Media media2 = new Media("XXX", "media", "dvd", "elokuva");
             Console.WriteLine(media2.ToString());
+
+            Laite laite = new Laite();
+            laite.Nimi = "XD10";
+            laite.Tyyppi = "laite";
+            laite.MikäLaite = "stereot";
+            laite.Valmistaja = "Sony";
+            Console.WriteLine(laite.ToString());
+
+            Laite laite2 = new Laite("BD10", "laite", "tabletti", "Samsung");
+            Console.WriteLine(laite2.ToString());
+
             Console.ReadKey();
 
         }

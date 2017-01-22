@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Hissi.cs" />
     <Compile Include="Kirjahylly.cs" />
+    <Compile Include="Laite.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

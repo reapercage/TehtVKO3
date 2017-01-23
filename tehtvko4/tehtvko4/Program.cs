@@ -19,7 +19,8 @@ namespace tehtvko4
             //Tehtävä 5
             //Radiohead();
             //Tehtävä 6
-            KirjahyllyJärjestykseen();
+            //KirjahyllyJärjestykseen();
+            Styrkkari();
         }
 
         static void HissinKäyttö()
@@ -144,6 +145,20 @@ namespace tehtvko4
 
             Console.ReadKey();
 
+        }
+        static void Styrkkari()
+        {
+            Kitaravahvistin kitaravahvistin = new Kitaravahvistin();
+            kitaravahvistin.Volume = 5;
+            kitaravahvistin.Low = 5;
+            kitaravahvistin.Mid = 5;
+            kitaravahvistin.High = 5;
+            Console.WriteLine(kitaravahvistin.ToString());
+            Kitaravahvistin kitaravahvistin2 = new Kitaravahvistin(2,6,5,8);
+            Console.WriteLine(kitaravahvistin2.ToString());
+            Distchannel distchannel = new Distchannel(6, 6, 6, 6, 6);
+            Console.WriteLine(distchannel.ToString());
+            Console.ReadKey();
         }
     }
 }

@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Distchannel.cs" />
     <Compile Include="Hissi.cs" />
     <Compile Include="Kirjahylly.cs" />
+    <Compile Include="Kitaravahvistin.cs" />
     <Compile Include="Laite.cs" />
     <Compile Include="Media.cs" />
     <Compile Include="Program.cs" />

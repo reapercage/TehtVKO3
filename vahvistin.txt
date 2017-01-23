@@ -1,0 +1,13 @@
+uml
+
+--vahvistin--
+-merkki
+-bass
+-mid
+-high
+-volume
+-channel
+
+*channel 2
+-gain
+-volume

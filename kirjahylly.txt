@@ -1,0 +1,19 @@
+uml
+
+--tavara--
+-nimi
+-tyyppi (media, laite, kirja, lehti)
+
+kirja
+ -genre
+ -kirjailija
+lehti
+ -kustantamo
+
+-media-
+ -muoto (cd, dvd, bluray, muistitikku)
+ -sisältö (musiikki, elokuva, data)
+
+-laite-
+ -tyyppi (kännykkä, tabletti, kannettava)
+ -valmistaja

@@ -1,0 +1,9 @@
+arvot
+boolean on/off
+int volume 0-9
+double frequency = 2000.0 - 26000.0
+
+metodit
+p‰‰lle/pois
+volume
+tajuusvalinta

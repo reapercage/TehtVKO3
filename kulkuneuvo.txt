@@ -1,0 +1,19 @@
+--Kulkuneuvo--
+^
+|
+--Auto--
++Merkki:string
++Malli:string
++Renkaat:<list>Rengas
++Renkaiden lkm: int {renkaat}
+-MaxRenkaiden Lkm
++Lis‰‰Rengas (Rengas Rengas)
+^
+|
+--Rengas--
++Valmistaja: string
++Malli: string
++Rengaskoko
++ToString():string
+
+\\ghost\temp

@@ -20,6 +20,7 @@ namespace tehtvko4
             //Radiohead();
             //Tehtävä 6
             //KirjahyllyJärjestykseen();
+            //Tehtävä 7
             Styrkkari();
         }
 
